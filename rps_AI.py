@@ -1,12 +1,15 @@
 from random import randint
+
 player = input("Player's move: ")
 rand_num = randint(0,2)
+
 if rand_num == 0:
     computer = "rock"
 elif rand_num == 1:
     computer = "paper"
 else:
     computer = "scissor"
+    
 print(f"Computer's move: {computer}")
 
 if player == computer: 
